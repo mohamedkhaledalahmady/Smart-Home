@@ -10,11 +10,11 @@
 
     
 > ### Team members:
-   - **Mohamed Khaild Alahamdy** 
+   - **Mohamed Alahmady** 
    - **Mohamed Alaa**
    - **Mohamed Tarek**
    - **Mohamed Almoufak**
-   - **Mohamed Arafa"
+   - **Mohamed Arafa**
    - **Mohoud Saeed**
    - **Mohamed Sayed**
    - **Mohamed Nyazi**
