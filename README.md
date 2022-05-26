@@ -2,9 +2,6 @@
 > ## Project Description:
    * 
    
-> ## Purpose from this project:
-   *
-   
 > ## Contents:
    * 
    * 
