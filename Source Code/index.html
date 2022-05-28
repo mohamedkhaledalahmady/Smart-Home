@@ -1,0 +1,45 @@
+<!DOCTYPE html>      
+<html>      
+<head>      
+    <title>Smart Home System</title>      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
+</head>      
+<body style="background-color: seagreen; color: white; text-align: center;">      
+    <h1> Smart Home</h1>                                     
+    <h4>LED Control</h4>     
+    Romm 1       
+    <button style="margin: 10px;background-color: red; color: white;" id="131" class="button">Red ON</button>          
+    <button style="margin:10px;background-color: white;color: red;" id="130" class="button">Red OFF</button>
+    <BR>
+    Room 2
+    <button style="margin: 10px;background-color: blue; color: yellow;" id="121" class="button">Blue ON</button>          
+    <button style="margin:10px;background-color: yellow;color: blue;" id="120" class="button"> Blue OFF</button>      
+        <script>        
+        $(".button").click(function () 
+        {           
+            console.clear();                                                 //if any button from the ".button" class is clicked      
+            var p = $(this).attr('id');                                 //get this button id and store it inside the "p" variable.     
+            pin: p                                                 //a dictionary contains the button id to get sent to the web server.      
+            switch (p)
+            {
+                case '131':arguments
+                    console.log("RED LED ON");
+                break;
+                case '130':arguments
+                    console.log("RED LED OFF");
+                break;
+                case '121':arguments
+                    console.log("BLUE LED ON");
+                break;
+                case '120':arguments
+                    console.log("BLUE LED OFF");
+                break;
+            }
+            $.get("http://192.168.1.4:80/", 
+            {                               
+                pin: p      
+            });      
+        });      
+    </script>      
+</body>      
+</html>
